@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en-us" version="1.0" root="root" mode="voice" tag-format="swi-semantics/1.0">
+	<rule id="root" scope="public">
+		<item>
+			<one-of>
+				<item><ruleref uri="#one"/><tag>1</tag></item>
+				<item><ruleref uri="#two"/><tag>2</tag></item>
+				<item><ruleref uri="#three"/><tag>3</tag></item>
+				<item><ruleref uri="#four"/><tag>4</tag></item>
+				<item><ruleref uri="#five"/><tag>5</tag></item>
+			</one-of>
+		</item>
+	</rule>
+	<rule id="one">
+		<one-of>
+			<item>
+				<item repeat="0-1">
+					<one-of>
+						<item>uh</item>
+						<item>um</item>
+					</one-of>
+				</item>
+				<one-of>
+					<item>one</item>
+					<item>1</item>
+				</one-of>
+			</item>
+		</one-of>
+	</rule>
+	<rule id="two">
+		<one-of>
+			<item>
+				<item repeat="0-1">
+					<one-of>
+						<item>uh</item>
+						<item>um</item>
+					</one-of>
+				</item>
+				<one-of>
+					<item>two</item>
+					<item>2</item>
+				</one-of>
+			</item>
+		</one-of>
+	</rule>
+	<rule id="three">
+		<one-of>
+			<item>
+				<item repeat="0-1">
+					<one-of>
+						<item>uh</item>
+						<item>um</item>
+					</one-of>
+				</item>
+				<one-of>
+					<item>three</item>
+					<item>3</item>
+				</one-of>
+			</item>
+		</one-of>
+	</rule>
+	<rule id="four">
+		<one-of>
+			<item>
+				<item repeat="0-1">
+					<one-of>
+						<item>uh</item>
+						<item>um</item>
+					</one-of>
+				</item>
+				<one-of>
+					<item>four</item>
+					<item>4</item>
+				</one-of>
+			</item>
+		</one-of>
+	</rule>
+	<rule id="five">
+		<one-of>
+			<item>
+				<item repeat="0-1">
+					<one-of>
+						<item>uh</item>
+						<item>um</item>
+					</one-of>
+				</item>
+				<one-of>
+					<item>five</item>
+					<item>5</item>
+				</one-of>
+			</item>
+		</one-of>
+	</rule>
+</grammar>

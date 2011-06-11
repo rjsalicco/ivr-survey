@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" xml:lang="en-us" version="1.0" root="root" mode="voice" tag-format="swi-semantics/1.0">
+	<rule id="root" scope="public">
+		<item>
+			<one-of>
+				<item><ruleref uri="#yes"/><tag>1</tag></item>
+				<item><ruleref uri="#no"/><tag>2</tag></item>
+			</one-of>
+		</item>
+	</rule>
+	<rule id="yes">
+		<one-of>
+			<item>
+				<item repeat="0-1">
+					<one-of>
+						<item>uh</item>
+						<item>um</item>
+					</one-of>
+				</item>
+				<one-of>
+					<item>yes</item>
+					<item>yeah</item>
+					<item>yep</item>
+					<item>correct</item>
+					<item>yes correct</item>
+					<item>yeah correct</item>
+					<item>that is correct</item>
+					<item>yes that is correct</item>
+					<item>yeah that is correct</item>
+					<item>yep that is correct</item>
+				</one-of>
+			</item>
+		</one-of>
+	</rule>
+	<rule id="no">
+		<one-of>
+			<item>
+				<item repeat="0-1">
+					<one-of>
+						<item>uh</item>
+						<item>um</item>
+					</one-of>
+				</item>
+				<one-of>
+					<item>no</item>
+					<item>nope</item>
+					<item>wrong</item>
+					<item>incorrect</item>
+					<item>no incorrect</item>
+					<item>nope incorrect</item>
+					<item>that is incorrect</item>
+					<item>no that is incorrect</item>
+					<item>nope that is incorrect</item>
+				</one-of>
+			</item>
+		</one-of>
+	</rule>
+</grammar>
