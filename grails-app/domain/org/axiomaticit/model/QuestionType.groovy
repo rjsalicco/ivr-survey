@@ -8,6 +8,7 @@ class QuestionType {
     static hasMany = [grammars:Grammar]
 
     static mapping = {
+		code unique: true
         grammars lazy: false
     }
 
