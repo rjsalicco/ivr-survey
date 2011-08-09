@@ -38,10 +38,9 @@ class EngineController {
 		def index = session.prompt
 		session.prompt = index + 1
 		if(prompts[index]) {
-			if(prompts[index] instanceof Question)
+			render(contentType:"text/xml") {
 				prompts[index].asVXML()
-			else
-				prompts[index].asVXML()
+			}
 		} else {
 			renderExit()
 		}
