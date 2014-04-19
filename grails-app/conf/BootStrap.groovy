@@ -1,13 +1,13 @@
 import groovy.xml.MarkupBuilder
-import org.axiomaticit.model.QuestionType
+import com.axiomaticit.model.QuestionType
 
 class BootStrap {
 
     def init = { servletContext ->
-		new QuestionType(code:"RATE", name:"Rating").save()
-		new QuestionType(code:"YESNO", name:"Yes or No").save()
+		new QuestionType(code:"RATE", name:"Rating").save(failOnError:true)
+		new QuestionType(code:"YESNO", name:"Yes or No").save(failOnError:true)
 		
-		org.axiomaticit.model.Prompt.metaClass.asVXML = { ->
+		com.axiomaticit.model.Prompt.metaClass.asVXML = { ->
 			def vxml = new MarkupBuilder()
 			
 			vxml(version: "2.0", "xml:lang":"en-US", "xmlns":"http://www.w3.org/2001/vxml") {
@@ -25,7 +25,7 @@ class BootStrap {
 			}
 		}
 		
-		org.axiomaticit.model.Question.metaClass.asVXML = { ->
+		com.axiomaticit.model.Question.metaClass.asVXML = { ->
 			def grammars = questionInstance.questionType.grammars
 			def vxml = new MarkupBuilder()
 			

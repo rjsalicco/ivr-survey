@@ -1,6 +1,4 @@
-
-
-<%@ page import="org.axiomaticit.model.Message" %>
+<%@ page import="com.axiomaticit.model.Message" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

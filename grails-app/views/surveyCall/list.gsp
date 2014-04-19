@@ -1,5 +1,4 @@
-
-<%@ page import="org.axiomaticit.report.SurveyCall" %>
+<%@ page import="com.axiomaticit.report.SurveyCall" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

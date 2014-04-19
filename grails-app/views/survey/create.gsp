@@ -1,6 +1,4 @@
-
-
-<%@ page import="org.axiomaticit.model.Survey" %>
+<%@ page import="com.axiomaticit.model.Survey" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

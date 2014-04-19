@@ -1,6 +1,4 @@
-
-
-<%@ page import="org.axiomaticit.model.QuestionType" %>
+<%@ page import="com.axiomaticit.model.QuestionType" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -45,7 +43,7 @@
                                   <label for="grammars"><g:message code="questionType.grammars.label" default="Grammars" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: questionTypeInstance, field: 'grammars', 'errors')}">
-                                    <g:select name="grammars" from="${org.axiomaticit.model.Grammar.list()}" multiple="yes" optionKey="id" size="5" value="${questionTypeInstance?.grammars*.id}" />
+                                    <g:select name="grammars" from="${com.axiomaticit.model.Grammar.list()}" multiple="yes" optionKey="id" size="5" value="${questionTypeInstance?.grammars*.id}" />
                                 </td>
                             </tr>
                         
