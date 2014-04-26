@@ -1,2 +1,11 @@
-target/**
-.gitignore
+passwd.txt
+.hidden
+.project
+.classpath
+.settings/
+target/
+**.DS_Store
+**.bin
+**.log
+**.jar
+**.class
